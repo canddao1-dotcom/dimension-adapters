@@ -2,7 +2,7 @@ import { CHAIN } from "../../helpers/chains";
 import { FetchOptions } from "../../adapters/types";
 import { httpPost } from "../../utils/fetchURL";
 
-const sentioApiKey = "l3ruhon4MonUTvfCHMYVGsK6Axp0KyjMM"; //Read Only
+const sentioApiKey = process.env.SENTIO_API_KEY || ''; //Read Only
 const API_URL =
   "https://app.sentio.xyz/api/v1/analytics/navi/astros/sql/execute";
 

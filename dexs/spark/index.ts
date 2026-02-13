@@ -3,7 +3,7 @@ import { CHAIN } from "../../helpers/chains";
 import fetch from "node-fetch";
 
 const url = 'https://app.sentio.xyz/api/v1/analytics/zhpv96/spark-processor/sql/execute';
-const apiKey = 'TLjw41s3DYbWALbwmvwLDM9vbVEDrD9BP';
+const apiKey = process.env.SPARK_API_KEY || '';
 
 const fetchTradeVolume = ({ startTimestamp, endTimestamp }: FetchOptions) =>
   fetch(url, {

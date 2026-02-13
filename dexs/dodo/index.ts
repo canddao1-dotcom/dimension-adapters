@@ -16,8 +16,8 @@ import dailyVolumePayload from "./dailyVolumePayload";
   // [HECO]: "https://n10.hg.network/subgraphs/name/dodoex-mine-v3-heco/heco",
   // [OKEXCHAIN]: "https://graph.kkt.one/subgraphs/name/dodoex/dodoex-v2-okchain",
 } as ChainEndpoints */
-const dailyEndpoint = "https://api.dodoex.io/graphql?opname=FetchDashboardDailyData&apikey=graphqldefiLlamadodoYzj5giof"
-const totalEndpoint = "https://api.dodoex.io/graphql?opname=FetchDashboardInfoData&apikey=graphqldefiLlamadodoYzj5giof"
+const dailyEndpoint = "https://api.dodoex.io/graphql?opname=FetchDashboardDailyData&apikey=${DODO_API_KEY}"
+const totalEndpoint = "https://api.dodoex.io/graphql?opname=FetchDashboardInfoData&apikey=${DODO_API_KEY}"
 const chains = [
   CHAIN.ARBITRUM,
    CHAIN.BSC,
